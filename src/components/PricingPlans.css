@@ -1,0 +1,222 @@
+.pricing {
+    background: var(--light-bg);
+    position: relative;
+}
+
+.plan-toggle {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.toggle-btn {
+    padding: 1rem 2rem;
+    background: var(--light-card);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-full);
+    color: var(--dark-text);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.toggle-icon-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.toggle-btn:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.toggle-btn.active {
+    background: var(--primary-gradient);
+    color: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0 4px 20px rgba(28, 77, 141, 0.3);
+}
+
+.toggle-icon {
+    font-size: 1.25rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.bulk-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pricing-card {
+    padding: 2rem;
+    position: relative;
+    animation: fadeInUp 0.6s ease-out backwards;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.popular {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 32px rgba(28, 77, 141, 0.2);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1.5rem;
+    background: var(--accent-gradient);
+    color: var(--dark-text);
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(73, 136, 196, 0.4);
+}
+
+.pricing-header {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.sms-count {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: var(--font-heading);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.sms-label {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pricing-body {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.price-tag {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(189, 232, 245, 0.1);
+    border-radius: var(--radius-md);
+}
+
+.currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gray-text);
+    vertical-align: super;
+}
+
+.amount {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--dark-text);
+    font-family: var(--font-heading);
+}
+
+.pricing-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--gray-text);
+    font-size: 0.95rem;
+}
+
+.pricing-features li img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.note-icon-small {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.pricing-cta {
+    width: 100%;
+    justify-content: center;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.pricing-card.popular:hover {
+    box-shadow: 0 12px 48px rgba(28, 77, 141, 0.3);
+}
+
+.pricing-note {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(189, 232, 245, 0.15);
+    border: 1px solid rgba(28, 77, 141, 0.2);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pricing-note p {
+    margin: 0;
+    color: var(--dark-text);
+    font-size: 1rem;
+}
+
+.pricing-note strong {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .plan-toggle {
+        flex-direction: column;
+    }
+
+    .toggle-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
