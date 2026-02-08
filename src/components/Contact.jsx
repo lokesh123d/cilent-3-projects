@@ -56,7 +56,7 @@ const Contact = () => {
                                 <img src="https://img.icons8.com/fluency/96/marker.png" alt="Location" className="info-icon-img" />
                                 <div className="info-content">
                                     <h4>Office Address</h4>
-                                    <p>Near Head Post Office (Dakghar)<br />Bangalipura, Banda, Uttar Pradesh</p>
+                                    <p>In Front of Head Post Office<br />Bangalupura, Banda, UP 210001</p>
                                 </div>
                             </div>
 

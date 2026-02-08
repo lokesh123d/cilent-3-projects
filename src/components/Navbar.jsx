@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="container navbar-container">
                 <div className="navbar-brand">
                     <div className="brand-icon">
-                        <span className="icon-letter">G</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsGFKv3Q0TqelzVVEbY7a4EHQ30Tm6AWnqpg&s" alt="Gramin Jan Seva Kendra Logo" className="brand-logo-img" />
                     </div>
                     <div className="brand-text">
                         <h3 className="brand-name gradient-text">Gramin Jan Seva Kendra</h3>

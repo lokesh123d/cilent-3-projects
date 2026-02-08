@@ -29,7 +29,7 @@ const Footer = () => {
                         <div className="footer-col">
                             <div className="footer-brand">
                                 <div className="brand-icon">
-                                    <span className="icon-letter">G</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsGFKv3Q0TqelzVVEbY7a4EHQ30Tm6AWnqpg&s" alt="Gramin Jan Seva Kendra Logo" className="brand-logo-img" />
                                 </div>
                                 <div className="brand-text">
                                     <h3 className="brand-name gradient-text">Gramin Jan Seva Kendra</h3>
@@ -49,7 +49,7 @@ const Footer = () => {
                                 </div>
                                 <div className="contact-item">
                                     <img src="https://img.icons8.com/fluency/32/marker.png" alt="Location" className="contact-icon-small" />
-                                    <p>Opp. Head Post Office, Bangalipura, Banda</p>
+                                    <p>In Front of Head Post Office, Bangalupura, Banda, UP 210001</p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const Footer = () => {
                                 Follow us on social media for updates and special offers.
                             </p>
                             <div className="footer-socials">
-                                <a href="#" className="social-btn" title="WhatsApp">
+                                <a href="https://whatsapp.com/channel/0029Vb6KCOXJ3juxGijgOg2f" target="_blank" rel="noopener noreferrer" className="social-btn" title="WhatsApp Channel">
                                     <img src="https://img.icons8.com/fluency/48/whatsapp.png" alt="WhatsApp" />
                                 </a>
                                 <a href="#" className="social-btn" title="Facebook">
@@ -117,7 +117,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-bottom-content">
                         <p className="copyright">
-                            © {currentYear} Gramin Jan Seva Kendra. All rights reserved. | Created by <a href="#" style={{ fontWeight: 'bold', color: 'inherit', textDecoration: 'underline' }}>Lokesh</a>
+                            © {currentYear} Gramin Jan Seva Kendra. All rights reserved. | Created by <a href="https://lokesh-three-lyart.vercel.app/" style={{ fontWeight: 'bold', color: 'inherit', textDecoration: 'underline' }}>Lokesh</a>
                         </p>
                         <div className="footer-bottom-links">
                             <a href="#privacy">Privacy Policy</a>

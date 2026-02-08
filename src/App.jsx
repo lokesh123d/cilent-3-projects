@@ -6,6 +6,7 @@ import Services from './components/Services';
 import PricingPlans from './components/PricingPlans';
 import CSCServices from './components/CSCServices';
 import WhyChooseUs from './components/WhyChooseUs';
+import CEOSection from './components/CEOSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ConnectModal from './components/ConnectModal';
@@ -21,8 +22,8 @@ function App() {
     return (
       <div className="loader-container">
         <div className="loader">
-          <div className="loader-circle"></div>
-          <div className="loader-text">Banda Digital</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsGFKv3Q0TqelzVVEbY7a4EHQ30Tm6AWnqpg&s" alt="Logo" className="loader-logo" />
+          <div className="loader-text">Gramin Jan Seva Kendra</div>
         </div>
       </div>
     );
@@ -32,6 +33,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <CEOSection />
       <CSCServices />
       <Services />
       <PricingPlans />
